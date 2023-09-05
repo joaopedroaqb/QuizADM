@@ -1,6 +1,6 @@
 /* Defina estilos globais */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: #f0f0f0;
     margin: 0;
     padding: 0;
@@ -13,16 +13,20 @@ body {
 /* Estilize o contêiner principal */
 .quiz-container {
     background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    padding: 30px;
     text-align: center;
+    transition: all 0.3s ease-in-out;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 /* Estilize o cabeçalho */
 h1 {
-    font-size: 24px;
+    font-size: 32px;
     margin-bottom: 20px;
+    color: #007BFF; /* Cor do cabeçalho */
 }
 
 /* Estilize a seção de seleção de dificuldade */
@@ -35,28 +39,39 @@ h1 {
 /* Estilize o texto de instrução */
 p {
     font-size: 18px;
-    margin-bottom: 10px;
+    margin-bottom: 20px; /* Aumente o espaçamento inferior */
 }
 
 /* Estilize o menu suspenso de dificuldade */
 select {
-    padding: 8px;
-    font-size: 16px;
+    padding: 12px; /* Aumente o preenchimento */
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: #f0f0f0;
 }
 
 /* Estilize o botão de início */
 button {
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 12px 24px; /* Aumente o preenchimento */
+    font-size: 18px;
     background-color: #007BFF;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
 }
 
 /* Adicione estilo de hover ao botão */
 button:hover {
     background-color: #0056b3;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Adicione uma sombra sutil no hover */
+}
+
+/* Estilize os ícones */
+button i {
+    margin-right: 8px; /* Adicione um espaçamento à direita do ícone */
+    font-size: 24px;
 }
